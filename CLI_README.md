@@ -19,13 +19,13 @@ SynopticCharts turns numerical weather prediction output into synoptic-style cha
 
 ```bash
 # Not yet published on PyPI.
-pip install "git+https://github.com/krober10nd/synoptic-charts.git"
+pip install "git+https://github.com/krober10nd/SynopticCharts.git"
 ```
 
 For MP4 generation (requires `ffmpeg` on your system):
 
 ```bash
-pip install "git+https://github.com/krober10nd/synoptic-charts.git#egg=synoptic-charts[video]"
+pip install "git+https://github.com/krober10nd/SynopticCharts.git#egg=synoptic-charts[video]"
 ```
 
 ## Examples (CLI)

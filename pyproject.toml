@@ -51,9 +51,9 @@ cli = [
 synoptic-charts = "synoptic_charts.cli:main"
 
 [project.urls]
-Homepage = "https://github.com/krober10nd/synoptic-charts"
-Repository = "https://github.com/krober10nd/synoptic-charts"
-Documentation = "https://github.com/krober10nd/synoptic-charts#readme"
+Homepage = "https://github.com/krober10nd/SynopticCharts"
+Repository = "https://github.com/krober10nd/SynopticCharts"
+Documentation = "https://github.com/krober10nd/SynopticCharts#readme"
 
 [tool.setuptools]
 packages = ["synoptic_charts"]

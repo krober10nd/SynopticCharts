@@ -24,7 +24,7 @@ SynopticCharts is a modern Python package that automates the creation of synopti
 ```bash
 # Not yet published on PyPI.
 # Install directly from GitHub:
-pip install "git+https://github.com/krober10nd/synoptic-charts.git"
+pip install "git+https://github.com/krober10nd/SynopticCharts.git"
 ```
 
 ### Development Installation
@@ -32,8 +32,8 @@ pip install "git+https://github.com/krober10nd/synoptic-charts.git"
 Clone the repository and install in editable mode with development tools:
 
 ```bash
-git clone https://github.com/krober10nd/synoptic-charts.git
-cd synoptic-charts
+git clone https://github.com/krober10nd/SynopticCharts.git
+cd SynopticCharts
 pip install -e ".[dev]"
 ```
 
@@ -42,7 +42,7 @@ pip install -e ".[dev]"
 For MP4 generation capabilities:
 
 ```bash
-pip install "git+https://github.com/krober10nd/synoptic-charts.git#egg=synoptic-charts[video]"
+pip install "git+https://github.com/krober10nd/SynopticCharts.git#egg=synoptic-charts[video]"
 ```
 
 ### Requirements
@@ -445,7 +445,7 @@ Install with CLI support:
 
 ```bash
 # Not yet published on PyPI.
-pip install "git+https://github.com/krober10nd/synoptic-charts.git"
+pip install "git+https://github.com/krober10nd/SynopticCharts.git"
 ```
 
 ### Commands
