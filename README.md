@@ -1,6 +1,6 @@
 # SynopticCharts
 
-![SynopticCharts logo](docs/images/logo.svg)
+<img src="docs/images/logo.svg" alt="SynopticCharts logo" width="512" />
 
 **Lightweight Python package for creating synoptic-style meteorological charts**
 
@@ -22,7 +22,9 @@ SynopticCharts is a modern Python package that automates the creation of synopti
 ### Basic Installation
 
 ```bash
-pip install synoptic-charts
+# Not yet published on PyPI.
+# Install directly from GitHub:
+pip install "git+https://github.com/krober10nd/synoptic-charts.git"
 ```
 
 ### Development Installation
@@ -40,7 +42,7 @@ pip install -e ".[dev]"
 For MP4 generation capabilities:
 
 ```bash
-pip install synoptic-charts[video]
+pip install "git+https://github.com/krober10nd/synoptic-charts.git#egg=synoptic-charts[video]"
 ```
 
 ### Requirements
@@ -442,7 +444,8 @@ from synoptic_charts import (
 Install with CLI support:
 
 ```bash
-pip install synoptic-charts[cli]
+# Not yet published on PyPI.
+pip install "git+https://github.com/krober10nd/synoptic-charts.git"
 ```
 
 ### Commands

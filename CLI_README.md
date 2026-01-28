@@ -1,6 +1,6 @@
 # SynopticCharts (CLI)
 
-![SynopticCharts logo](docs/images/logo.svg)
+<img src="docs/images/logo.svg" alt="SynopticCharts logo" width="512" />
 
 SynopticCharts turns numerical weather prediction output into synoptic-style charts and forecast videos (isobars, thickness, precip, and automatically-detected H/L centers) so you can spend more time analyzing patterns and less time wrangling GRIB files.
 
@@ -18,13 +18,14 @@ SynopticCharts turns numerical weather prediction output into synoptic-style cha
 ## Install
 
 ```bash
-pip install synoptic-charts
+# Not yet published on PyPI.
+pip install "git+https://github.com/krober10nd/synoptic-charts.git"
 ```
 
 For MP4 generation (requires `ffmpeg` on your system):
 
 ```bash
-pip install "synoptic-charts[video]"
+pip install "git+https://github.com/krober10nd/synoptic-charts.git#egg=synoptic-charts[video]"
 ```
 
 ## Examples (CLI)
