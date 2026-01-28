@@ -1,6 +1,8 @@
 # SynopticCharts (CLI)
 
-SynopticCharts generates synoptic-style charts and forecast videos from supported numerical weather prediction models.
+![SynopticCharts logo](docs/images/logo.svg)
+
+SynopticCharts turns numerical weather prediction output into synoptic-style charts and forecast videos (isobars, thickness, precip, and automatically-detected H/L centers) so you can spend more time analyzing patterns and less time wrangling GRIB files.
 
 ## Supported models
 

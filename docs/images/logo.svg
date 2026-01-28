@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-label="SynopticCharts logo">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1f2328"/>
+      <stop offset="1" stop-color="#111418"/>
+    </linearGradient>
+
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feColorMatrix in="b" type="matrix"
+        values="1 0 0 0 0
+                0 1 0 0 0
+                0 0 1 0 0
+                0 0 0 .35 0" result="s"/>
+      <feMerge>
+        <feMergeNode in="s"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <style>
+      .isobar { fill: none; stroke: #9fb0bf; stroke-width: 10; stroke-linecap: round; opacity: .55; }
+      .isobar2 { fill: none; stroke: #b8c6d2; stroke-width: 6; stroke-linecap: round; opacity: .50; }
+      .front { fill: none; stroke-width: 10; stroke-linecap: round; stroke-dasharray: 18 14; }
+      .warm { stroke: #ff6b6b; }
+      .cold { stroke: #4dabf7; }
+      .mark { font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; font-weight: 800; }
+      .H { fill: #ff4d4d; }
+      .L { fill: #4dabf7; }
+      .small { font-size: 54px; opacity: .95; }
+      .big { font-size: 180px; }
+      .micro { font-size: 44px; fill: #d6dde3; opacity: .85; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="1024" height="1024" rx="160" fill="url(#bg)"/>
+
+  <!-- Subtle glow behind the "storm" -->
+  <g filter="url(#soft)">
+    <circle cx="512" cy="520" r="330" fill="#0b0d10" opacity=".22"/>
+  </g>
+
+  <!-- Isobars (synoptic vibe) -->
+  <path class="isobar" d="M175,530 C270,330 470,260 635,320 C780,372 860,520 800,670 C740,822 540,878 385,810 C260,750 205,640 175,530"/>
+  <path class="isobar2" d="M260,540 C330,405 470,360 595,400 C705,435 760,540 720,650 C680,760 545,790 440,740 C350,700 290,625 260,540"/>
+  <path class="isobar2" d="M335,545 C385,455 475,435 555,460 C625,482 660,548 635,622 C610,696 520,712 455,680 C400,652 355,605 335,545"/>
+
+  <!-- Light-hearted: a very subtle "smile" curve embedded in the innermost isobar -->
+  <path d="M418,604 C460,642 564,642 606,604" fill="none" stroke="#d6dde3" stroke-width="8" stroke-linecap="round" opacity=".35"/>
+
+  <!-- Fronts -->
+  <path class="front warm" d="M170,300 C310,260 420,285 520,330 C640,384 760,420 864,410"/>
+  <path class="front cold" d="M150,770 C300,720 420,728 540,760 C680,796 800,820 900,790"/>
+
+  <!-- H/L markers -->
+  <text x="250" y="470" class="mark big H">H</text>
+  <text x="300" y="525" class="mark small micro">1028</text>
+
+  <text x="690" y="650" class="mark big L">L</text>
+  <text x="735" y="705" class="mark small micro">996</text>
+
+  <!-- Tiny caption/mark -->
+  <text x="512" y="920" text-anchor="middle" class="mark micro">SynopticCharts</text>
+</svg>

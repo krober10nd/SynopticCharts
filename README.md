@@ -1,10 +1,12 @@
 # SynopticCharts
 
+![SynopticCharts logo](docs/images/logo.svg)
+
 **Lightweight Python package for creating synoptic-style meteorological charts**
 
 For CLI-first usage (recommended), see [CLI_README.md](CLI_README.md).
 
-SynopticCharts is a modern Python package that automates the creation of professional synoptic meteorological charts from numerical weather prediction model data. It combines automated data retrieval, advanced meteorological analysis, and publication-quality visualization.
+SynopticCharts is a modern Python package that automates the creation of synoptic meteorological charts from numerical weather prediction model data. It combines automated data retrieval, meteorological analysis, and publication-quality visualization—so your attention stays on the atmosphere, not on file formats.
 
 ## Features
 
