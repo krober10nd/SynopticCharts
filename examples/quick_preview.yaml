@@ -1,0 +1,29 @@
+# Quick Preview Configuration
+# Use this configuration for fast prototyping and testing
+
+# Figure resolution (dots per inch)
+# Lower DPI = faster rendering and smaller files
+# 100 DPI is good for quick previews on screen
+default_dpi: 100
+
+# Figure dimensions (inches)
+# Smaller figure = faster rendering
+figure_width: 12.0
+figure_height: 9.0
+
+# Cache and output directories
+cache_dir: "~/.cache/synoptic_charts"
+output_dir: "./output"
+
+# Precipitation threshold (inches per hour)
+trace_threshold: 0.05  # Higher threshold shows only heavier precipitation
+
+# Contour intervals
+# Wider intervals = fewer contours = faster rendering
+mslp_contour_interval: 4.0  # Mean sea level pressure (hPa)
+thickness_contour_interval: 12.0  # 1000-500mb thickness (decameters)
+
+# Use this configuration:
+#   from synoptic_charts import Config
+#   config = Config.load_from_file("quick_preview.yaml")
+#   create_chart(..., config=config)

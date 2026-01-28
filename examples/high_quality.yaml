@@ -1,0 +1,49 @@
+# High Quality Configuration
+# Use this configuration for publication-quality charts and high-resolution outputs
+
+# Figure resolution (dots per inch)
+# Higher DPI = sharper images but larger file sizes
+# 300 DPI is standard for print publications
+default_dpi: 300
+
+# Figure dimensions (inches)
+# At 300 DPI: 16" × 12" = 4800 × 3600 pixels
+figure_width: 16.0
+figure_height: 12.0
+
+# Background color (dark makes precip shields/extent pop)
+background_color: "#0b1020"
+
+# Cache and output directories
+cache_dir: "~/.cache/synoptic_charts"
+output_dir: "./output"
+
+# Precipitation threshold (inches per hour)
+# Minimum rate to display on chart (raise this to hide trace/light returns)
+trace_threshold: 0.01
+
+# Snow often needs the same or slightly higher cutoff than rain.
+snow_trace_threshold: 0.01
+
+# Expand categorical precip masks by adjacent cells to remove artificial gaps
+# at boundaries between precip types. 0 disables.
+categorical_mask_dilation: 0
+
+# Precip rendering quality
+# Interpolate precip layers to a finer lat/lon grid before plotting.
+# 1 = native model grid (no interpolation), 2 = 2x finer, 3 = 3x finer, etc.
+precip_interp_factor: 1
+
+# Darken categorical precip colors by skipping the lightest portion of each colormap.
+# 0.0 = original colormap; higher values make low-end bins darker.
+precip_cmap_min: 0.44
+
+# Contour intervals
+# Finer intervals show more detail
+mslp_contour_interval: 2.0  # Mean sea level pressure (hPa)
+thickness_contour_interval: 4.0  # 1000-500mb thickness (decameters)
+
+# Use this configuration:
+#   from synoptic_charts import Config
+#   config = Config.load_from_file("high_quality.yaml")
+#   create_chart(..., config=config)
