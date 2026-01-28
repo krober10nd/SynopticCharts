@@ -30,7 +30,7 @@ pip install synoptic-charts
 Clone the repository and install in editable mode with development tools:
 
 ```bash
-git clone https://github.com/keithroberts/synoptic-charts.git
+git clone https://github.com/krober10nd/synoptic-charts.git
 cd synoptic-charts
 pip install -e ".[dev]"
 ```
